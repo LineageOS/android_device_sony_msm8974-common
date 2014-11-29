@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab6814e_222b5032",
+        "filename": "sepolicy/mpdecision.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2014-11-29T02:19:23Z",
+      "side": 1,
+      "message": "I hope we can do this by some other way, so that it can be restricted to just mpctl_device.\n\nmaybe create /dev/socket/mpctl from init?",
+      "revId": "8375060ac86ef95f86b309b03062d833e8e6a247",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_621d580f",
+        "filename": "sepolicy/mpdecision.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2014-11-29T02:19:23Z",
+      "side": 1,
+      "message": "This shouldn\u0027t be needed, the socket it needs is already labeled, and if isn\u0027t, then it should be.",
+      "revId": "8375060ac86ef95f86b309b03062d833e8e6a247",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_c21a4417",
+        "filename": "sepolicy/time_daemon.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2014-11-29T02:19:23Z",
+      "side": 1,
+      "message": "This shouldn\u0027t be needed, and if qcom/sepolicy doesn\u0027t have a dir we can add it to our file_contexts, and run restorecon from init if necessary.",
+      "revId": "8375060ac86ef95f86b309b03062d833e8e6a247",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
