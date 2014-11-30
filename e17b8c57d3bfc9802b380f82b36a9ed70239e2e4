@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab6814e_d61cc279",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2014-11-30T19:46:09Z",
+      "side": 1,
+      "message": "This is in sony/common.",
+      "revId": "e17b8c57d3bfc9802b380f82b36a9ed70239e2e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
