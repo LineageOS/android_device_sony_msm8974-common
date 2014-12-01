@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab6814e_f103d074",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2014-12-01T05:36:26Z",
+      "side": 1,
+      "message": "This was the best setup I could think of, so that we don\u0027t have to modify external/sepolicy and this still works.",
+      "revId": "bd52a49ed108d3ea52d72d524aaa70a1a8167bd0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
