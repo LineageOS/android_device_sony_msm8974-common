@@ -16,6 +16,24 @@
       "revId": "777da817b0406eff9045505cc3079ddbcf9c79b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_e7ff6b32",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 6817
+      },
+      "writtenOn": "2015-01-05T21:32:22Z",
+      "side": 1,
+      "message": "I need make this in rhine-common instead of here?",
+      "parentUuid": "7aa08908_2747b3bc",
+      "revId": "777da817b0406eff9045505cc3079ddbcf9c79b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
