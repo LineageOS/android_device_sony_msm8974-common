@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_2747b3bc",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-01-05T18:11:24Z",
+      "side": 1,
+      "message": "I would rather keep this in the devices, and add a file_contexts wherever the cmhw implementation is.",
+      "revId": "777da817b0406eff9045505cc3079ddbcf9c79b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
