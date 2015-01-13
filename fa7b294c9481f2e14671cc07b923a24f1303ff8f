@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a9d85d2_4d0059ab",
+        "filename": "sepolicy/mm-qcamerad.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 8640
+      },
+      "writtenOn": "2015-01-13T15:46:17Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this get it\u0027s own context rather than allow mm-qcamerad access to all system_data_file?",
+      "revId": "fa7b294c9481f2e14671cc07b923a24f1303ff8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
