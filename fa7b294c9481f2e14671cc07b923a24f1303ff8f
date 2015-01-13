@@ -16,6 +16,24 @@
       "revId": "fa7b294c9481f2e14671cc07b923a24f1303ff8f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a9d85d2_0d3c912e",
+        "filename": "sepolicy/mm-qcamerad.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-01-13T20:05:35Z",
+      "side": 1,
+      "message": "Yea, look at my comment on PS3\n\nIt is transitioned and labeled correctly, but this probably is before that happens and camera blows up without this.",
+      "parentUuid": "5a9d85d2_4d0059ab",
+      "revId": "fa7b294c9481f2e14671cc07b923a24f1303ff8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
