@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_d4d486be",
+        "filename": "sepolicy/mediaserver.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-01-13T05:25:56Z",
+      "side": 1,
+      "message": "and much less comfortable about this.",
+      "revId": "c8c9141615700f51fe54eb6d07f24283bc039b9f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_f4d1c2ce",
+        "filename": "sepolicy/mm-qcamerad.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-01-13T05:25:56Z",
+      "side": 1,
+      "message": "I don\u0027t feel comfortable about this. because of\n\ntype_transition mm-qcamerad system_data_file:sock_file camera_socket \"cam_socket1\";\ntype_transition mm-qcamerad system_data_file:sock_file camera_socket \"cam_socket2\";\nallow mm-qcamerad camera_socket:sock_file { create unlink write };\nallow mm-qcamerad camera_socket:dir w_dir_perms;\n\nfrom: \nhttps://github.com/CyanogenMod/android_device_qcom_sepolicy/blob/cm-12.0/common/mm-qcamerad.te",
+      "revId": "c8c9141615700f51fe54eb6d07f24283bc039b9f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
