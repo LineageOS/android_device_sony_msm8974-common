@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a9d85d2_8ac17a31",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-01-18T02:25:04Z",
+      "side": 1,
+      "message": "This may not look the best here, but looks nice on github web UI",
+      "revId": "bf854de1d373710c701e7c72602954748d8d425e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
