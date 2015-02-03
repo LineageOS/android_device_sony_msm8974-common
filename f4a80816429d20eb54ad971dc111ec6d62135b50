@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_f1347a4b",
+        "filename": "sepolicy/taimport.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-02-03T02:29:31Z",
+      "side": 1,
+      "message": "So this could have a \"wlan.*\" tacked on at the end, to allow removing the above line.\n\nNot much use here, since /data/etc is used exclusively by this, but it can be used for other things.",
+      "revId": "f4a80816429d20eb54ad971dc111ec6d62135b50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
