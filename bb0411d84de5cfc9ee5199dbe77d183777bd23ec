@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f201791_fb75c7cd",
+        "filename": "boot/init.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-08-18T17:24:46Z",
+      "side": 1,
+      "message": "\u0027Unable to extract FOTAKernel ramdisk as gzip. Retrying as lzma\u0027 or something like that might be better.\n\nWith one more print finally if that fails and the recovery in the boot image is used.",
+      "revId": "bb0411d84de5cfc9ee5199dbe77d183777bd23ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f201791_db720be4",
+        "filename": "boot/init.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-08-18T17:24:46Z",
+      "side": 1,
+      "message": "Why not extract to .lzma directly?",
+      "revId": "bb0411d84de5cfc9ee5199dbe77d183777bd23ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
