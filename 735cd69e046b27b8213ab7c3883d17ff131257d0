@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f201791_9eefe1af",
+        "filename": "boot/init.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 12180
+      },
+      "writtenOn": "2015-08-18T23:31:38Z",
+      "side": 1,
+      "message": "You have three apostrophes here, causing an issue. Do we really need the \"didn\u0027t\" formatted correctly?",
+      "range": {
+        "startLine": 60,
+        "startChar": 16,
+        "endLine": 60,
+        "endChar": 127
+      },
+      "revId": "735cd69e046b27b8213ab7c3883d17ff131257d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
