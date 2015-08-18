@@ -33,6 +33,24 @@
       "revId": "2504551ca628ea36590cd2598bea86aed6540dad",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f201791_7bbd3767",
+        "filename": "boot/custombootimg.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 12180
+      },
+      "writtenOn": "2015-08-18T15:40:08Z",
+      "side": 1,
+      "message": "The only other way to define BOOTREC_DEVICE would be with \"device/sony/$(TARGET_DEVICE)/recovery/root/etc/bootrec-device\" (like Dees replaced it in L32) -- is this what you mean?",
+      "parentUuid": "5f201791_5b995b1d",
+      "revId": "2504551ca628ea36590cd2598bea86aed6540dad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
