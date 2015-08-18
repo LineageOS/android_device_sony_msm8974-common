@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5f201791_3b457f71",
+        "filename": "boot/custombootimg.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 2511
+      },
+      "writtenOn": "2015-08-18T17:51:05Z",
+      "side": 1,
+      "message": "From what I can tell, BOOTREC_DEVICE is no longer needed, so I should remove it as part of this patch set. I could change it as suggested below, but I personally see no need to keep it as a variable. Is just a matter of personal preference. Let me know which you prefer.",
+      "parentUuid": "5f201791_9b7c93b6",
+      "revId": "2504551ca628ea36590cd2598bea86aed6540dad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f201791_7b9417e9",
         "filename": "boot/custombootimg.mk",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2015-08-18T15:02:05Z",
       "side": 1,
       "message": "Two things to be checked here:\n\n1) If the mv was intentional and this shows up in a normal boot.\n2) If this is needed on rhine too.\nOn shinano this is unused since the Lollipop update.",
+      "revId": "2504551ca628ea36590cd2598bea86aed6540dad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f201791_fb5ee743",
+        "filename": "boot/custombootimg.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2511
+      },
+      "writtenOn": "2015-08-18T17:51:05Z",
+      "side": 1,
+      "message": "We won\u0027t want to use mv when grabbing the file from device/sony/common as using mv would essentially delete the file from the source repo. I was trying to match it up with what I saw here: https://github.com/CyanogenMod/android_device_sony_common/blob/cm-11.0/resources.mk#L21 though I didn\u0027t make an effort to support the FXP_BUILD option. The old mv command worked because it was moving the file from the root of the boot image ramdisk to the combined root. The new method copies it directly to its proper final destination. Please let me know if I need to support the FXP_BUILD flag and I\u0027ll look into it.",
+      "parentUuid": "5f201791_7b9417e9",
       "revId": "2504551ca628ea36590cd2598bea86aed6540dad",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
