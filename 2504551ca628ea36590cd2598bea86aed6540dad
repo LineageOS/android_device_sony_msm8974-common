@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f201791_7b9417e9",
+        "filename": "boot/custombootimg.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-08-18T15:02:05Z",
+      "side": 1,
+      "message": "Two things to be checked here:\n\n1) If the mv was intentional and this shows up in a normal boot.\n2) If this is needed on rhine too.\nOn shinano this is unused since the Lollipop update.",
+      "revId": "2504551ca628ea36590cd2598bea86aed6540dad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f201791_5b995b1d",
+        "filename": "boot/custombootimg.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-08-18T15:02:05Z",
+      "side": 1,
+      "message": "Too bad we have to do this, but it does get annoying.\n\nI would suggest changing the BOOTREC_DEVICE variable though",
+      "revId": "2504551ca628ea36590cd2598bea86aed6540dad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
