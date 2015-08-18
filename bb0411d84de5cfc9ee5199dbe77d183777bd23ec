@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5f201791_3eb56def",
+        "filename": "boot/init.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2015-08-18T22:56:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f201791_fb75c7cd",
+      "revId": "bb0411d84de5cfc9ee5199dbe77d183777bd23ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f201791_db720be4",
         "filename": "boot/init.sh",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2015-08-18T17:24:46Z",
       "side": 1,
       "message": "Why not extract to .lzma directly?",
+      "revId": "bb0411d84de5cfc9ee5199dbe77d183777bd23ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f201791_feced581",
+        "filename": "boot/init.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2015-08-18T22:56:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f201791_db720be4",
       "revId": "bb0411d84de5cfc9ee5199dbe77d183777bd23ec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false

@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5f201791_fe20154c",
+        "filename": "boot/init.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2015-08-18T22:56:28Z",
+      "side": 0,
+      "message": "Not at all, but I can readd that in the next patchset.",
+      "parentUuid": "5f201791_3b6c5f07",
+      "revId": "eff108e505fabe8ac457e5f895e740bda8708bfa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f201791_1b71a3e1",
         "filename": "boot/init.sh",
         "patchSetId": 3
