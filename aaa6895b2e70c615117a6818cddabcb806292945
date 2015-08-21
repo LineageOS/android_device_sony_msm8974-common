@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f201791_143badd1",
+        "filename": "boot/custombootimg.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 9207
+      },
+      "writtenOn": "2015-08-21T01:31:15Z",
+      "side": 1,
+      "message": "this is the binary I mean",
+      "revId": "aaa6895b2e70c615117a6818cddabcb806292945",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
