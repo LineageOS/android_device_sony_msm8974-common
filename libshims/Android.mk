@@ -41,3 +41,57 @@ LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_32_BIT_ONLY := true
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
+
+# libshim_cald
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := \
+	 gui/SensorManager.cpp \
+	 symbols/Parcel.cpp \
+	 utils/VectorImpl.cpp
+
+LOCAL_C_INCLUDES := \
+	 $(LOCAL_PATH)/include \
+	 external/safe-iop/include
+
+LOCAL_SHARED_LIBRARIES := \
+	 libcutils \
+	 libgui \
+	 libbinder \
+	 libutils
+
+LOCAL_MODULE := libshim_cald
+
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+
+include $(BUILD_SHARED_LIBRARY)
+
+# libshim_camera
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := \
+	 ui/GraphicBuffer.cpp \
+	 ui/GraphicBufferAllocator.cpp \
+	 ui/GraphicBufferMapper.cpp \
+	 utils/Looper.cpp \
+	 utils/VectorImpl.cpp
+
+LOCAL_C_INCLUDES := \
+	 $(LOCAL_PATH)/include \
+	 external/safe-iop/include
+
+LOCAL_SHARED_LIBRARIES := \
+	 libcutils \
+	 libhardware \
+	 liblog \
+	 libui \
+	 libsync \
+	 libutils
+
+LOCAL_MODULE := libshim_camera
+
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+
+include $(BUILD_SHARED_LIBRARY)

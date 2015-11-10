@@ -62,6 +62,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     camera.qcom \
+    libshim_cald \
+    libshim_camera \
     libshims_signal \
     libshims_idd \
     libsonycamera
