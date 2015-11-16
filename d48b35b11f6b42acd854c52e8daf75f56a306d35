@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f2f7f8d_c3278312",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-11-16T01:51:24Z",
+      "side": 1,
+      "message": "This is in vendor on hammerhead",
+      "revId": "d48b35b11f6b42acd854c52e8daf75f56a306d35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
