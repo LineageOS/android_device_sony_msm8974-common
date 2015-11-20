@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f515b1d_9b50ffd6",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2015-11-20T19:41:23Z",
+      "side": 1,
+      "message": "Not final.",
+      "revId": "1e7017d120f40e0d9552fb29a497b6401fc060ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
