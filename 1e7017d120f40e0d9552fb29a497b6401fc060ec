@@ -34,6 +34,24 @@
       "revId": "1e7017d120f40e0d9552fb29a497b6401fc060ec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fcbff3d_2ccd1d5d",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2016-01-18T13:49:18Z",
+      "side": 1,
+      "message": "Yeah, that is why I left the \"not final\" comment.\n\nUpdated locally since a while, and I\u0027ll push it up in a bit.",
+      "parentUuid": "1fcbff3d_0ccf0180",
+      "revId": "1e7017d120f40e0d9552fb29a497b6401fc060ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
