@@ -12,7 +12,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
     persist.speaker.prot.enable=false \
     qcom.hw.aac.encoder=true \
-    ro.config.media_vol_steps=25
+    ro.config.media_vol_steps=25 \
+    ro.config.vc_call_vol_steps=7
 
 # Bluetooth HandsFree profile
 PRODUCT_PROPERTY_OVERRIDES += \
