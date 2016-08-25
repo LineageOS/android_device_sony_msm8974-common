@@ -51,8 +51,9 @@ LOCAL_SRC_FILES := \
 	 utils/VectorImpl.cpp
 
 LOCAL_C_INCLUDES := \
-	 $(LOCAL_PATH)/include \
-	 external/safe-iop/include
+    $(LOCAL_PATH)/include \
+    external/safe-iop/include \
+    system/core/libutils
 
 LOCAL_SHARED_LIBRARIES := \
 	 libcutils \
@@ -78,8 +79,9 @@ LOCAL_SRC_FILES := \
 	 utils/VectorImpl.cpp
 
 LOCAL_C_INCLUDES := \
-	 $(LOCAL_PATH)/include \
-	 external/safe-iop/include
+    $(LOCAL_PATH)/include \
+    external/safe-iop/include \
+    system/core/libutils
 
 LOCAL_SHARED_LIBRARIES := \
 	 libcutils \
