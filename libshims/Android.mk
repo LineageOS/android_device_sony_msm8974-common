@@ -56,10 +56,11 @@ LOCAL_C_INCLUDES := \
     system/core/libutils
 
 LOCAL_SHARED_LIBRARIES := \
-	 libcutils \
-	 libgui \
-	 libbinder \
-	 libutils
+    libcutils \
+    libgui \
+    libbinder \
+    libutils \
+    liblog
 
 LOCAL_MODULE := libshim_cald
 
