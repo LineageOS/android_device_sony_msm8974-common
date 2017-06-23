@@ -1,3 +1,19 @@
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    af.fast_track_multiplier=1 \
+    audio_hal.period_size=192 \
+    audio.deep_buffer.media=true \
+    audio.offload.buffer.size.kb=32 \
+    audio.offload.gapless.enabled=false \
+    audio.offload.pcm.16bit.enable=true \
+    audio.offload.pcm.24bit.enable=true \
+    audio.offload.video=false \
+    av.streaming.offload.enable=enable \
+    media.aac_51_output_enabled=true \
+    persist.speaker.prot.enable=false \
+    qcom.hw.aac.encoder=true \
+    ro.config.media_vol_steps=25
+
 # Bluetooth HandsFree profile
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.hfp.client=1
@@ -59,21 +75,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # OpenGL ES 3.0
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
-
-# Snapdragon audio processing
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.speaker.prot.enable=false \
-    audio.deep_buffer.media=true \
-    af.fast_track_multiplier=1 \
-    audio_hal.period_size=192 \
-    audio.offload.pcm.16bit.enable=true \
-    audio.offload.pcm.24bit.enable=true \
-    audio.offload.buffer.size.kb=32 \
-    audio.offload.video=false \
-    audio.offload.gapless.enabled=false \
-    av.streaming.offload.enable=enable \
-    media.aac_51_output_enabled=true \
-    qcom.hw.aac.encoder=true
 
 # Storage & USB OTG
 PRODUCT_PROPERTY_OVERRIDES += \
