@@ -16,6 +16,10 @@
     "target_path": "hardware/sony/macaddrsetup"
   },
   {
+    "repository": "android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep"
+  },
+  {
     "repository": "android_external_stlport",
     "target_path": "external/stlport"
   }
