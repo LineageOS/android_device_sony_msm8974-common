@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da87b5cf_16dca511",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 190,
+      "author": {
+        "id": 15257
+      },
+      "writtenOn": "2017-07-04T18:20:30Z",
+      "side": 1,
+      "message": "Default values, same as the other comment",
+      "range": {
+        "startLine": 183,
+        "startChar": 0,
+        "endLine": 190,
+        "endChar": 55
+      },
+      "revId": "f4ee02b9964afce34b9a8b7d4a16f77312279b88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da87b5cf_76cdf15c",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 15257
+      },
+      "writtenOn": "2017-07-04T18:20:30Z",
+      "side": 1,
+      "message": "These are already default values, no need to overlay",
+      "range": {
+        "startLine": 196,
+        "startChar": 0,
+        "endLine": 202,
+        "endChar": 55
+      },
+      "revId": "f4ee02b9964afce34b9a8b7d4a16f77312279b88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
