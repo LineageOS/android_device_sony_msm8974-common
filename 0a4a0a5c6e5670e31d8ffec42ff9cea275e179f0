@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da87b5cf_2de86fb3",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 17232
+      },
+      "writtenOn": "2017-07-07T05:21:02Z",
+      "side": 1,
+      "message": "completely forgot about rhine, probably gotta find another way.",
+      "revId": "0a4a0a5c6e5670e31d8ffec42ff9cea275e179f0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
