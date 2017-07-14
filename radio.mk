@@ -1,5 +1,5 @@
 # RIL config parameters
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so \
     rild.libargs=-d /dev/smd0 \
     ril.subscription.types=NV,RUIM \
