@@ -121,3 +121,11 @@ PRODUCT_PACKAGES += \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
+
+# crypto
+PRODUCT_PACKAGES += \
+    libcryptfs_hw
+
+TARGET_HW_DISK_ENCRYPTION := true
+TARGET_SWV8_DISK_ENCRYPTION := true
+
