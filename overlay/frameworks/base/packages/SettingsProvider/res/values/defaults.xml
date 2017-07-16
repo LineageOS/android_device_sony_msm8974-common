@@ -18,4 +18,8 @@
 -->
 <resources>
     <bool name="def_screen_brightness_automatic_mode">true</bool>
+
+	<!-- prevent dock event broadcast to apps 
+		frameworks/base/services/core/java/com/android/server/DockObserver.java:161 -->	
+	<bool name="def_device_provisioned">true</bool>
 </resources>
