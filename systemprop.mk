@@ -2,10 +2,6 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.data.large_tcp_window_size=true
 
-# Time-service
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.timed.enable=true
-
 # Bluetooth HandsFree profile
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.hfp.client=1
