@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0bc6c011_6e09eaa5",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2017-07-25T05:35:55Z",
+      "side": 1,
+      "message": "This is fine, matches adreno I believe.",
+      "revId": "2c093b76cbfa88b0ed3ee231cb163d2527024e0f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
