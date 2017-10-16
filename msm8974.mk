@@ -63,10 +63,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
-# FM
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -85,6 +81,14 @@ PRODUCT_PACKAGES += \
     libqdutils \
     libtilerenderer \
     libI420colorconvert
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl
+
+ #FM
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl
 
 # GPS
 PRODUCT_PACKAGES += \
