@@ -162,8 +162,9 @@ PRODUCT_PACKAGES += \
 
 # Camera (stock blobs)
 PRODUCT_PACKAGES += \
-	libshims_signal \
-	libshims_idd \
+    camera.qcom \
+    libshims_signal \
+    libshims_idd \
     libsonycamera
 
 # Recovery
