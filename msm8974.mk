@@ -61,6 +61,12 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@1.0-impl
 
 PRODUCT_PACKAGES += \
+    camera.qcom \
+    libshims_signal \
+    libshims_idd \
+    libsonycamera
+
+PRODUCT_PACKAGES += \
     Snap
 
 # Display
@@ -121,8 +127,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl
 
-# Netutils
+# Net
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.0 \
+    librmnetctl \
+    libxml2 \
     netutils-wrapper-1.0
 
 # NFC
@@ -160,13 +169,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8974
 
-# Camera (stock blobs)
-PRODUCT_PACKAGES += \
-    camera.qcom \
-    libshims_signal \
-    libshims_idd \
-    libsonycamera
-
 # Recovery
 PRODUCT_PACKAGES += \
     keycheck
@@ -175,11 +177,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy \
     $(LOCAL_PATH)/configs/seccomp/mediaextractor.policy:system/vendor/etc/seccomp_policy/mediaextractor.policy
-
-#  Mobile Data
-PRODUCT_PACKAGES += \
-    librmnetctl \
-    libxml2
 
 # Thermal management
 PRODUCT_PACKAGES += \
