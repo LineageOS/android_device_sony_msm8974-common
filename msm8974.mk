@@ -145,10 +145,6 @@ PRODUCT_PACKAGES += \
     libxml2 \
     netutils-wrapper-1.0
 
-# NFC
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl
-
 # Omx
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
