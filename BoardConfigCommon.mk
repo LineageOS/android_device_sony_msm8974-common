@@ -14,26 +14,9 @@
 
 BOARD_VENDOR := sony
 
-# Use Snapdragon LLVM Compiler if available
-TARGET_USE_SDCLANG := true
+PLATFORM_PATH := device/sony/msm8974-common
 
-# Include path
-TARGET_SPECIFIC_HEADER_PATH += device/sony/msm8974-common/include
-
-TARGET_NO_BOOTLOADER := true
-TARGET_NO_RADIOIMAGE := true
-
-# Kernel properties
-ifeq (,$(filter $(TARGET_KERNEL_SOURCE),))
-  TARGET_KERNEL_SOURCE := kernel/sony/msm8974
-endif
-
-# use CAF variants
-BOARD_USES_QCOM_HARDWARE := true
-
-# Platform
-TARGET_BOOTLOADER_BOARD_NAME := MSM8974
-TARGET_BOARD_PLATFORM := msm8974
+TARGET_SPECIFIC_HEADER_PATH += $(PLATFORM_PATH)/include
 
 # Architecture
 TARGET_ARCH := arm
@@ -41,20 +24,34 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
-TARGET_CUSTOM_DTBTOOL := dtbToolLineage
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := MSM8974
+TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
+
+# Kernel
+BOARD_KERNEL_BASE     := 0x00000000
+BOARD_KERNEL_IMAGE_NAME := zImage
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000
+BOARD_KERNEL_SEPARATED_DT := true
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+TARGET_KERNEL_SOURCE := kernel/sony/msm8974
+
+# Platform
+TARGET_BOARD_PLATFORM := msm8974
 
 # Audio
-BOARD_USES_ALSA_AUDIO := true
 AUDIO_FEATURE_DISABLED_USBAUDIO := true
 AUDIO_FEATURE_ENABLED_EXTN_POST_PROC := true
+BOARD_USES_ALSA_AUDIO := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 
 # Camera
-TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 TARGET_USES_MEDIA_EXTENSIONS := true
 
@@ -69,18 +66,8 @@ TARGET_LD_SHIM_LIBS := \
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
-BOARD_CHARGER_SHOW_PERCENTAGE := true
-BOARD_CHARGER_DISABLE_INIT_BLANK := true
-BACKLIGHT_PATH :=/sys/class/leds/lcd-backlight/brightness
-RED_LED_PATH := /sys/class/leds/led:rgb_red/brightness
-GREEN_LED_PATH := /sys/class/leds/led:rgb_green/brightness
-BLUE_LED_PATH := /sys/class/leds/led:rgb_blue/brightness
-
-# Font
-EXTENDED_FONT_FOOTPRINT := true
 
 # Graphics
-USE_OPENGL_RENDERER := true
 TARGET_USES_ION := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
@@ -97,9 +84,6 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 
-# Init configuration for init_sony
-BOARD_USES_INIT_SONY := true
-
 # Lights HAL
 TARGET_PROVIDES_LIBLIGHT := true
 
@@ -108,20 +92,26 @@ TARGET_HAS_LEGACY_POWER_STATS := true
 TARGET_HAS_NO_WLAN_STATS := true
 TARGET_USES_INTERACTION_BOOST := true
 
+# QCOM hardware
+BOARD_USES_QCOM_HARDWARE := true
+
 # Recovery
 TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 
 # RIL
 TARGET_RIL_VARIANT := caf
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2016-05-01
+
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/sony/msm8974-common/sepolicy
+    $(PLATFORM_PATH)/sepolicy
 
 # SODP build barrier
 PRODUCT_PLATFORM_SOD := true
 
 # Treble
-DEVICE_MANIFEST_FILE := device/sony/msm8974-common/manifest.xml
+DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifest.xml
