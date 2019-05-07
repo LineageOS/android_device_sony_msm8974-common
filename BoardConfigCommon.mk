@@ -108,5 +108,8 @@ include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
     device/sony/msm8974-common/sepolicy
 
+# SODP build barrier
+PRODUCT_PLATFORM_SOD := true
+
 # Treble
 DEVICE_MANIFEST_FILE := device/sony/msm8974-common/manifest.xml
