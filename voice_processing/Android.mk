@@ -26,6 +26,7 @@ LOCAL_MULTILIB := $(AUDIOSERVER_MULTILIB)
 
 LOCAL_MODULE := libqcomvoiceprocessingdescriptors
 
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE_RELATIVE_PATH := soundfx
 
 LOCAL_MODULE_TAGS := optional
