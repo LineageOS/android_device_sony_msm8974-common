@@ -59,6 +59,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     ro.hdmi.enable=true
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.ccodec=0
+
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.am.reschedule_service=true \
