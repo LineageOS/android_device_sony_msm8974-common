@@ -24,6 +24,7 @@
 #define LED_RED_PATH "/sys/class/leds/led:rgb_red/"
 #define LED_GREEN_PATH "/sys/class/leds/led:rgb_green/"
 #define LED_BLUE_PATH "/sys/class/leds/led:rgb_blue/"
+#define VIBRATOR_PATH "/sys/class/timed_output/vibrator/enable"
 
 // Constants: devices controls
 #define DEV_BLOCK_FOTA_NUM 16
@@ -35,6 +36,9 @@ public:
     // Board: introduction for keycheck
     virtual void introduce_keycheck()
     {
+        // Short vibration
+        vibrate(50);
+
         // LED boot selection colors
         led_color(255, 0, 255);
     }
@@ -49,8 +53,18 @@ public:
     // Board: introduction for Recovery
     virtual void introduce_recovery()
     {
+        // Short vibration
+        vibrate(100);
+
         // LED Recovery colors
         led_color(255, 100, 0);
+    }
+
+    // Board: finish init execution
+    virtual void finish_init()
+    {
+        // Power off vibrator
+        vibrate(0);
     }
 
     // Board: set led colors
@@ -59,6 +73,12 @@ public:
         write_int(LED_RED_PATH "brightness", r);
         write_int(LED_GREEN_PATH "brightness", g);
         write_int(LED_BLUE_PATH "brightness", b);
+    }
+
+    // Board: set hardware vibrator
+    void vibrate(uint8_t strength)
+    {
+        write_int(VIBRATOR_PATH, strength);
     }
 };
 
