@@ -47,7 +47,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.4k2kSplit=1 \
     debug.mdpcomp.4k2kSplit=true \
     dev.pm.dyn_samplingrate=1 \
-    debug.hwui.use_buffer_age=false
+    debug.hwui.use_buffer_age=false \
+    debug.sf.enable_gl_backpressure=1
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
