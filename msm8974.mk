@@ -230,5 +230,5 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-# Include non-opensource parts
+# Call the proprietary setup
 $(call inherit-product, vendor/sony/msm8974-common/msm8974-common-vendor.mk)
