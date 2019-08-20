@@ -26,10 +26,6 @@ else
     DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-wifionly
 endif
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/vendor/system/etc/permissions_sony.xml:vendor/system/etc/permissions_sony.xml
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
@@ -172,6 +168,9 @@ PRODUCT_PACKAGES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs//permissions_sony.xml:system/vendor/etc/permissions/permissions_sony.xml
 
 # Power
 PRODUCT_PACKAGES += \
