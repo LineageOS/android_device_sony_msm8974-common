@@ -15,7 +15,7 @@
 PLATFORM_PATH := device/sony/msm8974-common
 
 # Include msm8974-common system properties
-include $(PLATFORM_PATH)/systemprop.mk
+include $(PLATFORM_PATH)/system_prop.mk
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
