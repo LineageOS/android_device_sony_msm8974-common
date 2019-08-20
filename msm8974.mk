@@ -17,7 +17,20 @@ COMMON_PATH := device/sony/msm8974-common
 # Include msm8974-common system properties
 -include $(LOCAL_PATH)/systemprop.mk
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
+ifneq ($(BOARD_HAVE_RADIO),false)
+    DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-radio
+    $(call inherit-product, $(COMMON_PATH)/radio.mk)
+else
+    DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-wifionly
+endif
+
 # Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl
+
 PRODUCT_PACKAGES += \
     audiod \
     audio.a2dp.default \
@@ -38,12 +51,25 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
-# Specific apps
+# Bluetooth
 PRODUCT_PACKAGES += \
-    Snap \
-    Jelly
+    android.hardware.bluetooth@1.0-impl
+
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
+# FM
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl
 
 # Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.renderscript@1.0-impl
+
 PRODUCT_PACKAGES += \
     hwcomposer.msm8974 \
     gralloc.msm8974 \
@@ -56,12 +82,21 @@ PRODUCT_PACKAGES += \
     libtilerenderer \
     libI420colorconvert
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
+
 # Ion
 PRODUCT_PACKAGES += \
     libion
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
 # Lights
 PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
     lights.msm8974
 
 # Media profile
@@ -70,9 +105,13 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
+# Memtrack
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl
+
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0-impl
 
 # Omx
 PRODUCT_PACKAGES += \
@@ -89,23 +128,25 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libstagefrighthw
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl
+
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
    fs_config_files
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
-ifneq ($(BOARD_HAVE_RADIO),false)
-    DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-radio
-    $(call inherit-product, $(COMMON_PATH)/radio.mk)
-else
-    DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-wifionly
-endif
-
 # Power
 PRODUCT_PACKAGES += \
     power.msm8974
-
 
 # Camera (stock blobs)
 PRODUCT_PACKAGES += \
@@ -123,13 +164,29 @@ PRODUCT_PACKAGES += \
 
 # Thermal management
 PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl
+
+PRODUCT_PACKAGES += \
     thermanager
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
+
 # Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
+
 PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     wificond \
+    wifilogd \
     wpa_supplicant \
     wpa_supplicant.conf
 
