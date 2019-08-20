@@ -5,7 +5,7 @@ type ta_qmi_exec, exec_type, file_type;
 init_daemon_domain(ta_qmi)
 
 # TODO: What exactly is this needed for? - Need to investigate
-auditallow  ta_qmi self:capability { dac_override net_raw net_bind_service };
+auditallow ta_qmi self:capability { dac_override net_raw net_bind_service };
 
 # Connect to /dev/socket/tad
 unix_socket_connect(ta_qmi, tad, tad)
@@ -26,10 +26,8 @@ allow ta_qmi init:unix_stream_socket connectto;
 allow ta_qmi ta_prop:file { getattr open read };
 allow ta_qmi ta_prop:property_service set;
 
-#============= allow tad static wait ==============
 allow qti_init_shell rootfs:file entrypoint;
 
-#============= ta_qmi ==============
 # TODO: wrong labeled dest!
 auditallow ta_qmi proc:file { open read };
 auditallow ta_qmi sysfs:file { getattr open read };

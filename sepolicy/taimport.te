@@ -16,7 +16,6 @@ type_transition taimport ta_data_file:file bluetooth_data_file "bluetooth_bdaddr
 allow taimport wifi_data_file:file create_file_perms;
 allow taimport bluetooth_data_file:file create_file_perms;
 
-#============= taimport ==============
 set_prop(taimport, shell_prop);
 set_prop(taimport, ta_prop);
 # Allow reading system properties
