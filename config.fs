@@ -1,4 +1,4 @@
-[system/bin/qmuxd]
+[system/vendor/bin/qmuxd]
 mode: 0700
 user: AID_RADIO
 group: AID_SHELL
