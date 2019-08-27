@@ -38,15 +38,14 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.primary.msm8974 \
     audio.r_submix.default \
-    audio.usb.default \
-    audio_policy.msm8974
+    audio.usb.default
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
-    libqcomvoiceprocessingdescriptors \
     libqcomvoiceprocessing \
+    libqcomvoiceprocessingdescriptors \
     tinymix
 
 # Audio configuration
