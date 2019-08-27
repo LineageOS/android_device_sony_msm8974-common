@@ -23,7 +23,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(PLATFORM_PATH)/overlay-lineage
 
 ifneq ($(BOARD_HAVE_RADIO),false)
-    DEVICE_PACKAGE_OVERLAYS += $(PLATFORM_PATH)/overlay-radio
     $(call inherit-product, $(PLATFORM_PATH)/radio.mk)
 else
     DEVICE_PACKAGE_OVERLAYS += $(PLATFORM_PATH)/overlay-wifionly
