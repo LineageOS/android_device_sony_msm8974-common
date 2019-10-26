@@ -33,8 +33,6 @@ allow hal_memtrack_default qti_debugfs:file r_file_perms;
 # Sony/QCom-services
 allow hal_memtrack_default credmgrd:dir search;
 allow hal_memtrack_default credmgrd:file r_file_perms;
-allow hal_memtrack_default iddd:dir search;
-allow hal_memtrack_default iddd:file r_file_perms;
 allow hal_memtrack_default suntrold:dir search;
 allow hal_memtrack_default suntrold:file r_file_perms;
 allow hal_memtrack_default ta_qmi:dir search;

@@ -57,7 +57,6 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 # Camera Shims
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/bin/credmgrd|/system/vendor/lib/libshims_signal.so \
-    /system/vendor/bin/iddd|/system/vendor/lib/libshims_idd.so \
     /system/vendor/bin/mm-qcamera-daemon|libandroid.so \
     /system/vendor/bin/suntrold|/system/vendor/lib/libshims_signal.so \
     /system/lib/hw/camera.vendor.qcom.so|libsensor.so \

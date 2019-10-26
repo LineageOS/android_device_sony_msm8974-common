@@ -26,15 +26,6 @@
 /dev/block/platform/msm_sdcc\.1/by-name/apps_log                                  u:object_r:misc_block_device:s0
 /dev/block/mmcblk0p22                                                             u:object_r:misc_block_device:s0
 
-# idd/rca
-/idd(/.*)?                             u:object_r:iddd_file:s0
-/idd/socket                            u:object_r:iddd_socket:s0
-/idd/socket(/.*)?                      u:object_r:iddd_socket:s0
-/idd/output(/.*)?                      u:object_r:iddd_file:s0
-/idd/startup-prober(/.*)?              u:object_r:iddd_file:s0
-/system/etc/iddd.conf                  u:object_r:iddd_data_file:s0
-
-
 # Radio
 /dev/rmnet_ctrl                        u:object_r:radio_device:s0
 # mux controller
@@ -64,11 +55,9 @@
 
 
 # System binaries
-/system/bin/audiod        			   u:object_r:proc_audiod:s0
 /system/bin/qseeproxydaemon            u:object_r:tee_exec:s0
 /system/vendor/bin/credmgrd            u:object_r:credmgrd_exec:s0
 /system/vendor/bin/credmgrfirstboot.sh u:object_r:credmgrd_exec:s0
-/system/vendor/bin/iddd                u:object_r:iddd_exec:s0
 /system/vendor/bin/macaddrsetup        u:object_r:addrsetup_exec:s0
 /system/vendor/bin/sct_service         u:object_r:sct_exec:s0
 /system/vendor/bin/suntrold            u:object_r:suntrold_exec:s0

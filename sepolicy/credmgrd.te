@@ -44,18 +44,8 @@ allow credmgrd suntrold:unix_stream_socket connectto;
 allow credmgrd suntrold_sock_socket:sock_file write;
 allow credmgrd suntrold_sock_socket:dir search;
 
-# credmgrd iddd
 allow credmgrd firmware_file:dir { search r_dir_perms };
 allow credmgrd firmware_file:file r_file_perms;
-allow credmgrd iddd:unix_dgram_socket sendto;
-allow credmgrd iddd_socket:sock_file write;
-
-# /mnt/idd is tmpfs
-allow credmgrd tmpfs:dir search;
-allow credmgrd tmpfs:lnk_file read;
-allow credmgrd iddd_file:dir search;
-allow credmgrd iddd_socket:dir search;
-
 
 # credmgrd ion
 allow credmgrd ion_device:chr_file { rw_file_perms };

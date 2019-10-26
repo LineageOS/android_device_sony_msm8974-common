@@ -65,7 +65,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     camera.qcom \
-    libshims_idd \
     libshims_signal
 
 PRODUCT_PACKAGES += \

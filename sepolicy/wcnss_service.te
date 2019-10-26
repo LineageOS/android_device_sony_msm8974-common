@@ -1,2 +1,1 @@
 allow wcnss_service credmgrd_exec:file getattr;
-allow wcnss_service iddd_exec:file getattr;
