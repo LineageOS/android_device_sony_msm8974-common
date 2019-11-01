@@ -29,6 +29,7 @@ else
 endif
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(PLATFORM_PATH)/overlay-lineage/lineage-sdk
 
 # Audio
 PRODUCT_PACKAGES += \
