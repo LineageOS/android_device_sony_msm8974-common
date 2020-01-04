@@ -1,0 +1,1 @@
+allow hal_gnss_default sysfs_subsys:file read;
