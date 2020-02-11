@@ -64,7 +64,6 @@
 /system/vendor/bin/ta_qmi_service      u:object_r:ta_qmi_exec:s0
 /system/vendor/bin/taimport            u:object_r:taimport_exec:s0
 /system/vendor/bin/thermanager         u:object_r:thermanager_exec:s0
-/system/vendor/bin/timekeep            u:object_r:timekeep_exec:s0
 /system/vendor/bin/updatemiscta        u:object_r:ta_qmi_exec:s0
 
 /dev/block/platform/soc\.0/7824900\.sdhci/by-name/diag                            u:object_r:diag_partition_device:s0
@@ -102,9 +101,6 @@
 
 # ZRAM
 /sys/devices/virtual/block/zram0/mm_stat                                          u:object_r:sysfs_zram:s0
-
-# Timekeep
-/sys/devices/qpnp-rtc-17/rtc/rtc0/since_epoch                                     u:object_r:sysfs_timekeep:s0
 
 # rmt_storage
 /sys/devices/fd80000\.rmtfs_sharedmem/uio(/.*)?                                   u:object_r:sysfs_uio:s0

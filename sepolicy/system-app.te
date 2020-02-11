@@ -1,7 +1,0 @@
-allow system_app time_data_file:dir { write search };
-allow system_app time_data_file:file { write open getattr };
-
-# Timekeep
-set_prop(system_app, timekeep_prop)
-r_dir_file(system_app, sysfs_timekeep)
-r_dir_file(system_app, sysfs_rtc)
