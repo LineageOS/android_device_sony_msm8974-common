@@ -44,10 +44,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \
+    libtinycompress \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcomvoiceprocessingdescriptors \
     tinymix
 
 # Audio configuration
