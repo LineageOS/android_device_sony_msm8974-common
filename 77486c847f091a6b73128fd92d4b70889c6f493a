@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9e148f36_4335596a",
+        "filename": "gps/etc/gps.conf",
+        "patchSetId": 3
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 24529
+      },
+      "writtenOn": "2020-08-18T21:07:25Z",
+      "side": 1,
+      "message": "LPP_User_Plane is not working for me with this setup. No fix whenever there is an active network connection (LTE).\n\nTherefore change this value to 2, this works fine.",
+      "revId": "77486c847f091a6b73128fd92d4b70889c6f493a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
