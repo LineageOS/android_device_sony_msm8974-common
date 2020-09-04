@@ -1,1 +1,2 @@
+dontaudit vold hal_bootctl_hwservice:hwservice_manager find;
 allow vold sysfs_mmc_host:file w_file_perms;
