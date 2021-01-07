@@ -19,6 +19,9 @@
 /dev/block/platform/msm_sdcc\.1/by-name/TA                u:object_r:tad_block_device:s0
 /dev/block/platform/msm_sdcc\.1/by-name/LTALabel          u:object_r:ltalabel_block_device:s0
 
+# Shader (Adreno)
+/data/misc/gpu/glsl_shader_log\.txt                       u:object_r:shaderlog_file:s0
+
 # Thermanager
 /(vendor|system/vendor)/bin/thermanager                   u:object_r:thermanager_exec:s0
 
