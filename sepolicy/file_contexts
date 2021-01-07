@@ -25,3 +25,6 @@
 # Timekeep
 /sys/devices/qpnp-rtc-17/rtc/rtc0/since_epoch             u:object_r:sysfs_rtc:s0
 /(vendor|system/vendor)/bin/timekeep                      u:object_r:timekeep_exec:s0
+
+# Adreno
+/data/misc/gpu/glsl_shader_log\.txt                       u:object_r:shaderlog_file:s0

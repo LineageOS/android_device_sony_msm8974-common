@@ -10,3 +10,6 @@ type thermanager_exec, exec_type, file_type;
 # TimeKeep
 type timekeep, domain;
 type timekeep_exec, exec_type, file_type;
+
+# Adreno shader logfile
+type shaderlog_file, file_type, data_file_type, core_data_file_type;
